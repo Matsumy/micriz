@@ -1,0 +1,32 @@
+def menu_manga():
+    print("""       ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+|￣￣￣￣￣￣￣￣￣￣￣|   "Projeto PUC BES 2022-1,
+     BEM-VINDO a       Eu sou Pepi, O Coelho mais responsável que você já viu 
+     STORYSTORE        e estou aqui para ajudar. O que você gostaria de fazer?
+|＿＿＿＿＿＿＿＿＿＿＿|   "  ᴇᴍɪʟʏ, ᴊᴏãᴏ ɢᴀʙʀɪᴇʟ, ᴊᴏãᴏ ᴘᴇᴅʀᴏ ᴍᴇɴᴅᴇs ᴇ ᴍᴀᴛʜᴇᴜs ᴡ.
+⠀⠀⠀⠀⠀(\__/)||
+⠀⠀⠀  (•ㅅ•)||         (1) Cadastro mangá   (2) Venda Manga  (3)Cadastro cliente 
+⠀⠀⠀⠀ / 　 づ           (4) Menu de clientes    (5) Sair                             
+
+                        """)
+    escolhamenu = int(input('Digite o número correspondente por favor: (1,2,3,4,5)'))
+    if escolhamenu == 1:
+        rg_manga()
+        menu_manga()
+    elif escolhamenu == 2:
+        list_manga()
+        buy_manga()
+        menu_manga()
+    elif escolhamenu == 3:
+        menu_cliente()
+        cpfop = input('CPF do cliente: ')
+        menu_manga()
+    elif escolhamenu == 4:
+        menu_cliente()
+        menu_manga()
+    elif escolhamenu == 5:
+        print(""" ⠀⠀⠀⠀
+        /)＿/)☆      ⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.
+    ⠀⠀／(๑^᎑^๑)っ ＼  "Pepi agradece a preferência. Tenha um ótimo trabalho <3."
+    ／|￣∪￣ ￣ |＼／   ⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*
+    ⠀|＿＿_＿＿|／            """)
