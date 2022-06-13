@@ -1,0 +1,13 @@
+def menu_cliente():
+    print("*"*20)
+    print("""
+    °*  (\(\ ⠀(\ /) ⊹.°⊹.°* |   MENU DE CLIENTES   |⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*
+     ⊹.(๑´³`(⁎˃ᴗ˂⁎)˚. ⊹       CPF CLIENTE
+     °* /⌒つ ⊹O )⊹.°⊹.°*     (1) Alteral cpf   
+                              (2) Buscar CPF 
+                              (3) Adicioar cpf  
+                              (4) Remover cpf  
+                              (5) Sair """)
+
+    print('*'*20)
+    cpfop = int(input('Escolha uma ação:'))
