@@ -1,0 +1,12 @@
+def buy_manga():
+    for k, v in Bd.mangaEstoqueBD.items():
+        while True:
+            print('⊹.°⊹.°* AQUI ESTÁ⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*')
+            print(f"O manga {k} possui {v} cópias.")
+            if input("Deseja adicionar o mangá ao carrinho? (s/n) ") == "s":
+                print('⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°*')
+                print("Mangá colocado no carrinho com sucesso!")
+                Bd.mangaEstoqueBD[k] -= 1
+                v -= 1
+            else:
+                menu_manga()
