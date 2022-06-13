@@ -1,0 +1,18 @@
+def rg_manga():
+    while True:
+        print('⊹.°⊹.°*⊹.° CADASTRO ⊹.°⊹.°*⊹.°⊹.°*⊹.°⊹.°* ')
+        manga = str(input("Digite o nome do Mangá: "))
+        print('-----------------------------------------------')
+        preco = float(input("Digite o preço do Mangá: "))
+        print('-----------------------------------------------')
+        estoque = int(input("Digite a quantidade do Mangá: "))
+        print('-----------------------------------------------')
+        Bd.mangaPrecoBD[manga] = preco
+        Bd.mangaEstoqueBD[manga] = estoque
+        if input("Deseja adicionar mais um Mangá? (s/n) ") == "n":
+            print(""" ⠀⠀⠀⠀
+                /)＿/)☆
+            ⠀⠀／(๑^᎑^๑)っ ＼  "Pepi agradece a preferência. Tenha um ótimo trabalho <3."
+            ／|￣∪￣ ￣ |＼／
+            ⠀|＿＿_＿＿|／            """)
+        break
